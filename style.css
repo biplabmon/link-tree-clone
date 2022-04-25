@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+};
+
+body{
+    height: 100vh;
+    width: 100vw;
+    /* margin: auto; */
+    
+}
+.container{
+    height: 80vh;
+    width: 40vw;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* max-width: max-content; */
+    background: linear-gradient(#192e4b, #447c7d);
+    margin-top: 3rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.logo > img{
+    width: 5rem;
+    object-fit: cover;
+}
+
+h2,h5{
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+.profession{
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
+.links{
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 2rem;
+    width: 70%;
+    text-align: center;
+}
+
+
+.link{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    color: #192e4b;
+    background: white;
+    margin: 1.75rem 0;
+    padding: 0.5rem;
+    font-weight: bold;
+    outline: 2px solid whitesmoke;
+    outline-offset: 4px;
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+
+.link:hover{
+    color: whitesmoke;
+    background: transparent;
+}
+
+/* Responsive size  */
+/* Mobile Device  */
+
+@media screen and (max-width: 426px){
+    .container{
+        height: 100vh;
+        width: 100vw;
+        margin-top: 0px;
+    }
+}
